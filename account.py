@@ -1,5 +1,5 @@
 class Account:
-    def __init__(self, name):
+    def __init__(self, name: str):
         """
         function to establish account object
         :param name: first name of person
@@ -8,7 +8,7 @@ class Account:
         self.__account_name = name
         self.__account_balance = 0
 
-    def deposit(self, amount):
+    def deposit(self, amount: float):
         """
         function to increase account_balance based on input
         :param amount: amount of $ deposited into account
@@ -20,7 +20,7 @@ class Account:
         else:
             return False
 
-    def withdraw(self, amount):
+    def withdraw(self, amount: float):
         """
         function to decrease account_balance based on input
         :param amount: amount of money to take out of account (must be more than $0 and less than current balance)
