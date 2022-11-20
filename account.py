@@ -11,7 +11,7 @@ class Account:
         self.__account_name = name
         self.__account_balance = balance
 
-    def deposit(self, amount) -> float:
+    def deposit(self, amount) -> bool:
         """
         function to increase account_balance based on input
         :param amount: amount of $ deposited into account
@@ -23,7 +23,7 @@ class Account:
         else:
             return False
 
-    def withdraw(self, amount) -> float:
+    def withdraw(self, amount) -> bool:
         """
         function to decrease account_balance based on input
         :param amount: amount of money to take out of account (must be more than $0 and less than current balance)
