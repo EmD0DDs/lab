@@ -1,4 +1,7 @@
 class Account:
+    """
+    A class representing details for account object
+    """
     def __init__(self, name: str, balance=0) -> None:
         """
         function to establish account object
